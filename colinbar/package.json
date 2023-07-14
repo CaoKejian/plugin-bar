@@ -1,0 +1,12 @@
+{
+  "name": "colinbar",
+  "version": "1.0.0",
+  "description": "一款可自定义的柱状图插件 「 vue 』",
+  "main": "colinbar.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vue3","vue插件","柱状图","自定义","可视化","响应式","动画"],
+  "author": "caokejian",
+  "license": "ISC"
+}
