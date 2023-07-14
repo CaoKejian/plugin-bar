@@ -6,6 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaoKejian/plugin-bar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CaoKejian/plugin-bar/issues",
+    "email": "1849201815@qq.com"
+  },  
   "keywords": ["vue3","vue插件","柱状图","自定义","可视化","响应式","动画"],
   "author": "caokejian",
   "license": "ISC"
