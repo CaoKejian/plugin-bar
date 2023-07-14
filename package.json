@@ -1,13 +1,16 @@
 {
   "name": "colincharts",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib ./src/plugin/index.js --name colinbar --dest colinbar"
   },
   "dependencies": {
+    "colinbar": "^1.0.0",
+    "colinbar1": "^1.0.0",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
