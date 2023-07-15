@@ -1,6 +1,6 @@
 {
   "name": "colinbar",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "一款可自定义的柱状图插件",
   "main": "colinbar.common.js",
   "scripts": {

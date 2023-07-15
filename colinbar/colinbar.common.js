@@ -114,9 +114,9 @@ if (typeof window !== 'undefined') {
 
 ;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-button/index.vue?vue&type=template&id=5f63bdc3&scoped=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=template&id=650118e6&scoped=true
 
-const _withScopeId = n => ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.pushScopeId)("data-v-5f63bdc3"), n = n(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.popScopeId)(), n);
+const _withScopeId = n => ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.pushScopeId)("data-v-650118e6"), n = n(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.popScopeId)(), n);
 const _hoisted_1 = {
   class: "x"
 };
@@ -208,11 +208,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, 1024)]);
   }), 128))], 4)], 512), _hoisted_13])])]);
 }
-;// CONCATENATED MODULE: ./src/plugin/colin-button/index.vue?vue&type=template&id=5f63bdc3&scoped=true
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=template&id=650118e6&scoped=true
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-button/index.vue?vue&type=script&lang=js
-/* harmony default export */ var colin_buttonvue_type_script_lang_js = ({
-  name: 'colinButton',
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=script&lang=js
+/* harmony default export */ var colin_barvue_type_script_lang_js = ({
+  name: 'colinBar',
   props: ['data'],
   data() {
     return {
@@ -259,21 +259,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, 500);
   }
 });
-;// CONCATENATED MODULE: ./src/plugin/colin-button/index.vue?vue&type=script&lang=js
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=script&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-button/index.vue?vue&type=style&index=0&id=5f63bdc3&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=style&index=0&id=650118e6&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/plugin/colin-button/index.vue?vue&type=style&index=0&id=5f63bdc3&scoped=true&lang=css
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=style&index=0&id=650118e6&scoped=true&lang=css
 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-button/index.vue?vue&type=style&index=1&id=5f63bdc3&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=style&index=1&id=650118e6&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/plugin/colin-button/index.vue?vue&type=style&index=1&id=5f63bdc3&lang=css
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=style&index=1&id=650118e6&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(89);
-;// CONCATENATED MODULE: ./src/plugin/colin-button/index.vue
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue
 
 
 
@@ -282,13 +282,13 @@ var exportHelper = __webpack_require__(89);
 
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(colin_buttonvue_type_script_lang_js, [['render',render],['__scopeId',"data-v-5f63bdc3"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(colin_barvue_type_script_lang_js, [['render',render],['__scopeId',"data-v-650118e6"]])
 
-/* harmony default export */ var colin_button = (__exports__);
+/* harmony default export */ var colin_bar = (__exports__);
 ;// CONCATENATED MODULE: ./src/plugin/index.js
 
 const components = {
-  colinBar: colin_button
+  colinBar: colin_bar
 };
 function install(Vue) {
   const keys = Object.keys(components);
