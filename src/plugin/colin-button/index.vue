@@ -7,6 +7,16 @@
     <div class='overWrapper'>
       <div class='innerWrapper'>
         <div class='box1' :style="{ visibility: isOk ? 'visible' : 'hidden' }">
+          <div class='fake1'>
+            <div class='yItem' style="height:50%" v-for="item in yData" :key="item">
+              <div>{{ item }}</div>
+              <div style="margin-left: 4px;">-</div>
+            </div>
+          </div>
+          <div class='bar1'>
+            <div class='xItem'>
+            </div>
+          </div>
         </div>
         <div class='box2' ref="box2">
           <div class='fake' :style="{ width: `${box2Width}px`, borderBottom: isOk ? '1px solid #000' : '0px' }">
@@ -42,6 +52,11 @@ export default {
     }
   },
   methods: {
+    handleData(data) {
+      const values = Array.from(new Set(data.map(item => item.value))).sort((a, b) => b - a);
+      const max = values.shift();
+      this.yData = [Math.floor(max / 2), Math.floor(max)].reverse();
+    },
     handleX(data) {
       const maxItem = data.reduce((max, item) => (item.value > max.value ? item : max));
       const maxBit = maxItem.value;
@@ -57,6 +72,7 @@ export default {
     }
   },
   async mounted() {
+    this.handleData(this.data)
     await this.handleX(this.data)
     this.box2Width = this.$refs.box2.scrollWidth;
     // 在页面加载后添加动画类，通过 setTimeout 模拟延迟效果
@@ -101,20 +117,48 @@ export default {
   background: #fff;
 }
 
-.box1,
-.box3 {
-  height: 100%;
-  width: 10%;
-  box-sizing: border-box;
+.yItem {
+  height: 20%;
+  width: 100%;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yItem:nth-child(2) {
+  margin-bottom: 0.5rem;
+}
+
+.fake1 {
+  position: absolute;
+  top: calc(30% - 1.5rem);
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  font-size: 0.6rem;
   display: flex;
   flex-direction: column;
+}
+
+.bar1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.box1 {
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   justify-content: flex-end;
+  position: relative;
 }
 
 .box3 {
   width: 2%;
 }
-
 
 .xItem {
   width: 20%;
@@ -123,10 +167,21 @@ export default {
 }
 
 .box2 {
-  flex: 1;
+  /* flex: 1; */
+  width: 90%;
   display: flex;
   flex-direction: column;
   overflow-x: scroll;
+}
+
+.box2::-webkit-scrollbar {
+  width: 0em;
+  height: 0;
+  background: transparent;
+}
+
+.box2::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 .fake {
@@ -174,7 +229,6 @@ export default {
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  height: 2rem;
 }
 </style>
 
