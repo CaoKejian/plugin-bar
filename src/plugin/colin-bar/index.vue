@@ -30,7 +30,7 @@
           </div>
           <div class='bar' :style="{ width: `${box2Width}px` }">
             <div class='xItem' v-for="item in data" :key="item">
-              {{ item.xName }}
+              <sppan>{{ isOk ? item.xName : '' }}</sppan>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
 </template>
 <script>
 export default {
-  name: 'colinButton',
+  name: 'colinBar',
   props: ['data'],
   data() {
     return {

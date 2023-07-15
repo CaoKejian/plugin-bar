@@ -1,6 +1,6 @@
-import colinButton from './colin-button/index.vue'
+import colinBar from './colin-bar/index.vue'
 const components = {
-  colinButton,
+  colinBar,
 };
 function install(Vue) {
   const keys = Object.keys(components);
