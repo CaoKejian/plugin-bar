@@ -24,7 +24,7 @@ data: [
 `import colinUI from './plugin/index'`  
 `reateApp(App).use(colinUI).mount('#app')`  
 
-### 在组件中使用 < 
+### 在组件中使用  
 
 `<colinBar :data="data"></colinBar>`
 

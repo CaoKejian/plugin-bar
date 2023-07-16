@@ -131,9 +131,9 @@ if (typeof window !== 'undefined') {
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(203);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=template&id=650118e6&scoped=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=template&id=5bc13af7&scoped=true
 
-const _withScopeId = n => ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.pushScopeId)("data-v-650118e6"), n = n(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.popScopeId)(), n);
+const _withScopeId = n => ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.pushScopeId)("data-v-5bc13af7"), n = n(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.popScopeId)(), n);
 const _hoisted_1 = {
   class: "x"
 };
@@ -155,6 +155,7 @@ const _hoisted_7 = {
   class: "innerWrapper"
 };
 const _hoisted_8 = {
+  key: 0,
   class: "fake1"
 };
 const _hoisted_9 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
@@ -171,20 +172,20 @@ const _hoisted_11 = {
   class: "box2",
   ref: "box2"
 };
-const _hoisted_12 = {
+const _hoisted_12 = ["onMouseover", "onMouseout"];
+const _hoisted_13 = {
   class: "span"
 };
-const _hoisted_13 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+const _hoisted_14 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
   class: "box3"
 }, null, -1));
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_sppan = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.resolveComponent)("sppan");
   return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_1, [!$data.isOk ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_2, _hoisted_5)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_6, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_7, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
     class: "box1",
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
       visibility: $data.isOk ? 'visible' : 'hidden'
     })
-  }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_8, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($data.yData, item => {
+  }, [$props.isShowY ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_8, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($data.yData, item => {
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
       class: "yItem",
       style: {
@@ -192,11 +193,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       },
       key: item
     }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)(item), 1), _hoisted_9]);
-  }), 128))]), _hoisted_10], 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_11, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+  }), 128))])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), _hoisted_10], 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", _hoisted_11, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
     class: "fake",
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
       width: `${$data.box2Width}px`,
-      borderBottom: $data.isOk ? '1px solid #000' : '0px'
+      borderBottom: $data.isOk ? '1px solid #000' : '0px',
+      borderLeft: $data.isOk ? '1px solid #000' : '0px'
     })
   }, [((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)(external_commonjs_vue_commonjs2_vue_root_Vue_.Fragment, null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.renderList)($data.tData, item => {
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
@@ -207,10 +209,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         'vItem-animate': item.animate
       }]),
       style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
-        'height': $data.isOk ? `${item.bit * 100}%` : '0%'
-      })
-    }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_12, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.isOk ? item.value : ''), 1)], 6)]);
-  }), 128))], 4), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
+        height: $data.isOk ? `${item.bit * 100}%` : '0%',
+        backgroundColor: item.bgColor,
+        transition: 'all 0.3s ease'
+      }),
+      onMouseover: $event => $options.handleMouseOver(item.id),
+      onMouseout: $event => $options.handleMouseOut(item.id)
+    }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", _hoisted_13, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.isOk && $props.isShowValue ? item.value : ''), 1)], 46, _hoisted_12)]);
+  }), 128))], 4), $props.isShowX ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
+    key: 0,
     class: "bar",
     style: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeStyle)({
       width: `${$data.box2Width}px`
@@ -219,18 +226,97 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
       class: "xItem",
       key: item
-    }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_sppan, null, {
-      default: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.withCtx)(() => [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createTextVNode)((0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.isOk ? item.xName : ''), 1)]),
-      _: 2
-    }, 1024)]);
-  }), 128))], 4)], 512), _hoisted_13])])]);
+    }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("span", null, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($data.isOk ? item.xName : ''), 1)]);
+  }), 128))], 4)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)], 512), _hoisted_14])])]);
 }
-;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=template&id=650118e6&scoped=true
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=template&id=5bc13af7&scoped=true
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=script&lang=js
 /* harmony default export */ var colin_barvue_type_script_lang_js = ({
   name: 'colinBar',
-  props: ['data'],
+  props: {
+    data: {
+      type: Array,
+      default: () => [{
+        id: 1,
+        xName: '周一',
+        value: 120
+      }, {
+        id: 2,
+        xName: '周二',
+        value: 60
+      }, {
+        id: 3,
+        xName: '周三',
+        value: 20
+      }, {
+        id: 4,
+        xName: '周四',
+        value: 70
+      }, {
+        id: 5,
+        xName: '周五',
+        value: 10
+      }, {
+        id: 6,
+        xName: '周一',
+        value: 120
+      }, {
+        id: 7,
+        xName: '周二',
+        value: 60
+      }, {
+        id: 8,
+        xName: '周三',
+        value: 20
+      }, {
+        id: 9,
+        xName: '周四',
+        value: 70
+      }, {
+        id: 10,
+        xName: '周五',
+        value: 10
+      }, {
+        id: 11,
+        xName: '周一',
+        value: 120
+      }, {
+        id: 12,
+        xName: '周二',
+        value: 60
+      }, {
+        id: 13,
+        xName: '周三',
+        value: 20
+      }, {
+        id: 14,
+        xName: '周四',
+        value: 70
+      }, {
+        id: 15,
+        xName: '周五',
+        value: 10
+      }]
+    },
+    isShowY: {
+      type: Boolean,
+      default: true // 设置默认值为false
+    },
+
+    isShowX: {
+      type: Boolean,
+      default: true
+    },
+    isShowValue: {
+      type: Boolean,
+      default: true
+    },
+    bgColor: {
+      type: String,
+      default: '#5871c0'
+    }
+  },
   data() {
     return {
       box2Width: null,
@@ -240,6 +326,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     };
   },
   methods: {
+    handleMouseOver(id) {
+      const x = this.tData.find(item => {
+        return item.id === id;
+      });
+      const y = this.lightenColor(this.bgColor, 10);
+      x.bgColor = y;
+    },
+    handleMouseOut(id) {
+      const x = this.tData.find(item => {
+        return item.id === id;
+      });
+      x.bgColor = this.bgColor;
+    },
     handleData(data) {
       const values = Array.from(new Set(data.map(item => item.value))).sort((a, b) => b - a);
       const max = values.shift();
@@ -257,10 +356,42 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ...item,
         bit: item === maxItem ? 1 : item.bit
       }));
+    },
+    handleBgColor(data) {
+      data.map(item => {
+        item.bgColor = this.bgColor;
+      });
+    },
+    lightenColor(color, amount) {
+      // 判断颜色值是否为缩写形式，若是则转换为完整的6位颜色值
+      if (color.length === 4) {
+        color = color.replace(/^#(.)(.)(.)$/, "#$1$1$2$2$3$3");
+      }
+
+      // 移除颜色值的井号 #
+      color = color.replace("#", "");
+
+      // 将颜色值转换为RGB格式
+      const r = parseInt(color.substring(0, 2), 16);
+      const g = parseInt(color.substring(2, 4), 16);
+      const b = parseInt(color.substring(4, 6), 16);
+
+      // 计算亮度增量
+      const increment = Math.round(2.55 * amount);
+
+      // 增加RGB各分量的值
+      const newR = Math.min(255, r + increment);
+      const newG = Math.min(255, g + increment);
+      const newB = Math.min(255, b + increment);
+
+      // 将新的RGB值转换为十六进制颜色表示
+      const newColor = `#${newR.toString(16).padStart(2, '0')}${newG.toString(16).padStart(2, '0')}${newB.toString(16).padStart(2, '0')}`;
+      return newColor;
     }
   },
   async mounted() {
     this.handleData(this.data);
+    this.handleBgColor(this.data);
     await this.handleX(this.data);
     this.box2Width = this.$refs.box2.scrollWidth;
     // 在页面加载后添加动画类，通过 setTimeout 模拟延迟效果
@@ -278,15 +409,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 });
 ;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=script&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=style&index=0&id=650118e6&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=style&index=0&id=5bc13af7&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=style&index=0&id=650118e6&scoped=true&lang=css
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=style&index=0&id=5bc13af7&scoped=true&lang=css
 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=style&index=1&id=650118e6&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/plugin/colin-bar/index.vue?vue&type=style&index=1&id=5bc13af7&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=style&index=1&id=650118e6&lang=css
+;// CONCATENATED MODULE: ./src/plugin/colin-bar/index.vue?vue&type=style&index=1&id=5bc13af7&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(620);
@@ -299,7 +430,7 @@ var exportHelper = __webpack_require__(620);
 
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(colin_barvue_type_script_lang_js, [['render',render],['__scopeId',"data-v-650118e6"]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(colin_barvue_type_script_lang_js, [['render',render],['__scopeId',"data-v-5bc13af7"]])
 
 /* harmony default export */ var colin_bar = (__exports__);
 ;// CONCATENATED MODULE: ./src/plugin/index.js

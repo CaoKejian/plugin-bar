@@ -1,17 +1,23 @@
 {
   "name": "colinbar",
-  "version": "1.1.0",
+  "version": "2.1.0",
   "description": "一款可自定义的柱状图插件",
   "main": "colinbar.common.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Vue3","插件","柱状图","可视化图表","自定义","动画","响应式"],
+  "keywords": [
+    "Vue3",
+    "插件",
+    "柱状图",
+    "可视化图表",
+    "自定义"
+  ],
   "author": "曹珂俭",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CaoKejian/plugin-bar/"
+    "url": "git+https://github.com/CaoKejian/plugin-bar.git"
   },
   "bugs": {
     "url": "https://github.com/CaoKejian/plugin-bar/issues"

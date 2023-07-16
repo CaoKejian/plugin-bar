@@ -9,8 +9,7 @@
     "package": "vue-cli-service build --target lib ./src/plugin/index.js --name colinbar --dest colinbar"
   },
   "dependencies": {
-    "colinbar": "^1.0.0",
-    "colinbar1": "^1.0.0",
+    "colinbar": "file:colinbar",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
