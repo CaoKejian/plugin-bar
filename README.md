@@ -28,12 +28,13 @@ data: [<br />
 
 `<colinBar :data="data"></colinBar>`
 
-| 配置项        | 类型    | 描述                        |
-| ------------- | ------- | --------------------------- |
-| `data`        | Array   | 数据 格式参考 👆🏻 方数据格式 |
-| `isShowY`     | boolean | 是否显示纵坐标值            |
-| `isShowX`     | boolean | 是否显示横坐标值            |
-| `isShowValue` | boolean | 是否显示每一项的值          |
+| 配置项        | 类型    | 描述                           | 注意                            |
+| ------------- | ------- | --------------------------- | ---------------------------|
+| `data`        | Array   | 数据 格式参考 👆🏻 方数据格式 |   |
+| `isShowY`     | boolean | 是否显示纵坐标值            |   |
+| `isShowX`     | boolean | 是否显示横坐标值            |   |
+| `isShowValue` | boolean | 是否显示每一项的值          |   |
+| `bgColor`     | String/16进制 | 是否显示每一项的值          | 若使用16进制，不使用v-bind，直接采用 `bgColor='#000'`的形式  |
 
 ## 注意
 
