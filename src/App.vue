@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <colinBar :data="data" :isShowY="false" :isShowX="false" :isShowValue="false"></colinBar>
+    <colinBar :data="data" :isShowY="false" :isShowX="false" :isShowValue="false" ></colinBar>
   </div>
 </template>
 

@@ -23,9 +23,9 @@
             :style="{ width: `${box2Width}px`, borderBottom: isOk ? '1px solid #000' : '0px', borderLeft: isOk ? '1px solid #000' : '0px' }">
             <div class='value' v-for="item in tData" :key="item">
               <div class="vItem" :class="{ 'vItem-animate': item.animate }" :style="{
-                'height': isOk ? `${item.bit * 100}%` : '0%',
+                'height': isOk ? `${item.bit * 100}%` : '0%', 'backgroundColor': bgColor
               }">
-                <span class="span">{{ isOk && isShowValue? item.value : '' }}</span>
+                <span class="span">{{ isOk && isShowValue ? item.value : '' }}</span>
               </div>
             </div>
           </div>
@@ -56,9 +56,13 @@ export default {
       type: Boolean,
       default: true
     },
-    isShowValue:{
-      type:Boolean,
-      default:true
+    isShowValue: {
+      type: Boolean,
+      default: true
+    },
+    bgColor: {
+      type: String,
+      default: '#5871c0'
     }
   },
   data() {
@@ -90,7 +94,6 @@ export default {
     }
   },
   async mounted() {
-    console.log(this.isShowY);
     this.handleData(this.data)
     await this.handleX(this.data)
     this.box2Width = this.$refs.box2.scrollWidth;
