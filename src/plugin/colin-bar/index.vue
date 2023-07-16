@@ -23,8 +23,10 @@
             :style="{ width: `${box2Width}px`, borderBottom: isOk ? '1px solid #000' : '0px', borderLeft: isOk ? '1px solid #000' : '0px' }">
             <div class='value' v-for="item in tData" :key="item">
               <div class="vItem" :class="{ 'vItem-animate': item.animate }" :style="{
-                'height': isOk ? `${item.bit * 100}%` : '0%', 'backgroundColor': bgColor
-              }">
+                height: isOk ? `${item.bit * 100}%` : '0%',
+                backgroundColor: item.bgColor,
+                transition: 'all 0.3s ease'
+              }" @mouseover="handleMouseOver(item.id)" @mouseout="handleMouseOut(item.id)">
                 <span class="span">{{ isOk && isShowValue ? item.value : '' }}</span>
               </div>
             </div>
@@ -45,8 +47,24 @@ export default {
   name: 'colinBar',
   props: {
     data: {
-      type: Object,
-      default: () => ({}) // 设置一个空对象作为默认值
+      type: Array,
+      default: () => [
+        { id: 1, xName: '周一', value: 120 },
+        { id: 2, xName: '周二', value: 60 },
+        { id: 3, xName: '周三', value: 20 },
+        { id: 4, xName: '周四', value: 70 },
+        { id: 5, xName: '周五', value: 10 },
+        { id: 6, xName: '周一', value: 120 },
+        { id: 7, xName: '周二', value: 60 },
+        { id: 8, xName: '周三', value: 20 },
+        { id: 9, xName: '周四', value: 70 },
+        { id: 10, xName: '周五', value: 10 },
+        { id: 11, xName: '周一', value: 120 },
+        { id: 12, xName: '周二', value: 60 },
+        { id: 13, xName: '周三', value: 20 },
+        { id: 14, xName: '周四', value: 70 },
+        { id: 15, xName: '周五', value: 10 },
+      ],
     },
     isShowY: {
       type: Boolean,
@@ -74,6 +92,19 @@ export default {
     }
   },
   methods: {
+    handleMouseOver(id) {
+      const x = this.tData.find(item => {
+        return item.id === id
+      })
+      const y = this.lightenColor(this.bgColor, 10)
+      x.bgColor = y
+    },
+    handleMouseOut(id) {
+      const x = this.tData.find(item => {
+        return item.id === id
+      })
+      x.bgColor = this.bgColor
+    },
     handleData(data) {
       const values = Array.from(new Set(data.map(item => item.value))).sort((a, b) => b - a);
       const max = values.shift();
@@ -91,10 +122,43 @@ export default {
         ...item,
         bit: item === maxItem ? 1 : item.bit
       }));
-    }
+    },
+    handleBgColor(data) {
+      data.map(item => {
+        item.bgColor = this.bgColor
+      })
+    },
+    lightenColor(color, amount) {
+      // 判断颜色值是否为缩写形式，若是则转换为完整的6位颜色值
+      if (color.length === 4) {
+        color = color.replace(/^#(.)(.)(.)$/, "#$1$1$2$2$3$3");
+      }
+
+      // 移除颜色值的井号 #
+      color = color.replace("#", "");
+
+      // 将颜色值转换为RGB格式
+      const r = parseInt(color.substring(0, 2), 16);
+      const g = parseInt(color.substring(2, 4), 16);
+      const b = parseInt(color.substring(4, 6), 16);
+
+      // 计算亮度增量
+      const increment = Math.round(2.55 * amount);
+
+      // 增加RGB各分量的值
+      const newR = Math.min(255, r + increment);
+      const newG = Math.min(255, g + increment);
+      const newB = Math.min(255, b + increment);
+
+      // 将新的RGB值转换为十六进制颜色表示
+      const newColor = `#${newR.toString(16).padStart(2, '0')}${newG.toString(16).padStart(2, '0')}${newB.toString(16).padStart(2, '0')}`;
+
+      return newColor;
+    },
   },
   async mounted() {
     this.handleData(this.data)
+    this.handleBgColor(this.data)
     await this.handleX(this.data)
     this.box2Width = this.$refs.box2.scrollWidth;
     // 在页面加载后添加动画类，通过 setTimeout 模拟延迟效果

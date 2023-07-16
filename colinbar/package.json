@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Vue3","插件","柱状图","可视化图表","自定义"],
+  "keywords": ["Vue3","插件","柱状图","可视化图表","自定义","动画","响应式"],
   "author": "曹珂俭",
   "license": "ISC",
   "repository": {

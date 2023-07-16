@@ -4,27 +4,27 @@
 
 ## 使用方法
 
-安装依赖 `npm install` <br />
-启动服务 `npm run dev/npm dev` <br />
+安装依赖 `npm install`   
+启动服务 `npm run dev/npm dev`   
 
 ## 数据格式
 
-`xName`:横坐标 <br />
-`value`: 值 <br />
-data: [<br />
-{ id: 1, xName: '周一', value: 120 },<br />
-{ id: 2, xName: '周二', value: 60 }<br />
-...<br />
-]<br />
+`xName`:横坐标  
+`value`: 值  
+data: [  
+  { id: 1, xName: '周一', value: 120 },  
+  { id: 2, xName: '周二', value: 60 }  
+...  
+]  
 
 ## 使用方式
 
-### 在`main.js`文件中 <br />
+### 在`main.js`文件中  
 
-`import colinUI from './plugin/index'` <br />
-`reateApp(App).use(colinUI).mount('#app')` <br />
+`import colinUI from './plugin/index'`  
+`reateApp(App).use(colinUI).mount('#app')`  
 
-### 在组件中使用 <br />
+### 在组件中使用 < 
 
 `<colinBar :data="data"></colinBar>`
 
