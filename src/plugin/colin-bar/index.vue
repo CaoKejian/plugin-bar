@@ -7,7 +7,7 @@
     <div class='overWrapper'>
       <div class='innerWrapper'>
         <div class='box1' :style="{ visibility: isOk ? 'visible' : 'hidden' }">
-          <div class='fake1'>
+          <div class='fake1' v-if="isShowY">
             <div class='yItem' style="height:50%" v-for="item in yData" :key="item">
               <div>{{ item }}</div>
               <div style="margin-left: 4px;">-</div>
@@ -19,18 +19,19 @@
           </div>
         </div>
         <div class='box2' ref="box2">
-          <div class='fake' :style="{ width: `${box2Width}px`, borderBottom: isOk ? '1px solid #000' : '0px' }">
+          <div class='fake'
+            :style="{ width: `${box2Width}px`, borderBottom: isOk ? '1px solid #000' : '0px', borderLeft: isOk ? '1px solid #000' : '0px' }">
             <div class='value' v-for="item in tData" :key="item">
               <div class="vItem" :class="{ 'vItem-animate': item.animate }" :style="{
                 'height': isOk ? `${item.bit * 100}%` : '0%',
               }">
-                <span class="span">{{ isOk ? item.value : '' }}</span>
+                <span class="span">{{ isOk && isShowValue? item.value : '' }}</span>
               </div>
             </div>
           </div>
-          <div class='bar' :style="{ width: `${box2Width}px` }">
+          <div v-if="isShowX" class='bar' :style="{ width: `${box2Width}px` }">
             <div class='xItem' v-for="item in data" :key="item">
-              <sppan>{{ isOk ? item.xName : '' }}</sppan>
+              <span>{{ isOk ? item.xName : '' }}</span>
             </div>
           </div>
         </div>
@@ -42,7 +43,24 @@
 <script>
 export default {
   name: 'colinBar',
-  props: ['data'],
+  props: {
+    data: {
+      type: Object,
+      default: () => ({}) // 设置一个空对象作为默认值
+    },
+    isShowY: {
+      type: Boolean,
+      default: true // 设置默认值为false
+    },
+    isShowX: {
+      type: Boolean,
+      default: true
+    },
+    isShowValue:{
+      type:Boolean,
+      default:true
+    }
+  },
   data() {
     return {
       box2Width: null,
@@ -72,6 +90,7 @@ export default {
     }
   },
   async mounted() {
+    console.log(this.isShowY);
     this.handleData(this.data)
     await this.handleX(this.data)
     this.box2Width = this.$refs.box2.scrollWidth;
@@ -223,6 +242,7 @@ export default {
 .span {
   position: relative;
   top: -1rem;
+  user-select: none;
 }
 
 .bar {
