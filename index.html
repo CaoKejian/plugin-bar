@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+    <iframe id="bi_iframe" src="./video-bar.gif" frameborder="0" allowfullscreen="true" onload="adjustIframe();"></iframe>
+
+  </iframe>
+  <script>
+    function adjustIframe(){
+        var ifm= document.getElementById("bi_iframe");
+        ifm.height=document.documentElement.clientHeight;
+        ifm.width=document.documentElement.clientWidth;
+}
+  </script>
+</body>
+
+</html>

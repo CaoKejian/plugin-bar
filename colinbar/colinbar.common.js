@@ -8,7 +8,6 @@
 var __webpack_unused_export__;
 
 
-// eslint-disable-next-line no-unused-vars
 __webpack_unused_export__ = ({
   value: true
 });

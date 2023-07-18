@@ -2,17 +2,6 @@
 
 ## vue3 插件
 
-## 视频介绍
-<iframe 
-src="视频或者网页路径" 
-scrolling="no" 
-border="0" 
-frameborder="no" 
-framespacing="0" 
-allowfullscreen="true" 
-height=600 
-width=800> 
-</iframe>
 ## 使用方法
 
 安装依赖 `npm install`   
