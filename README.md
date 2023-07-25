@@ -4,7 +4,7 @@
 
 ## 视频介绍
 
-![Project Demo]([./path/to/your/gif/image.gif](http://cao-kejian.gitee.io/video-bar/))
+![image](https://gitee.com/cao-kejian/video-bar)
 ## 使用方法
 
 安装依赖 `npm install`   
