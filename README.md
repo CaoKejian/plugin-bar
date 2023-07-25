@@ -3,8 +3,7 @@
 ## vue3 插件
 
 ## 视频介绍
-
-![image](https://gitee.com/cao-kejian/video-bar)
+![image](https://github.com/CaoKejian/plugin-bar/blob/main/video-bar.gif))
 ## 使用方法
 
 安装依赖 `npm install`   
