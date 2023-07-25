@@ -4,7 +4,7 @@
 
 ## 视频介绍
 <iframe 
-src="视频或者网页路径" 
+src="[视频或者网页路径](http://cao-kejian.gitee.io/video-bar/)" 
 scrolling="no" 
 border="0" 
 frameborder="no" 
