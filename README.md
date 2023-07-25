@@ -3,16 +3,8 @@
 ## vue3 插件
 
 ## 视频介绍
-<iframe 
-src="[视频或者网页路径](http://cao-kejian.gitee.io/video-bar/)" 
-scrolling="no" 
-border="0" 
-frameborder="no" 
-framespacing="0" 
-allowfullscreen="true" 
-height=600 
-width=800> 
-</iframe>
+
+![Project Demo]([./path/to/your/gif/image.gif](http://cao-kejian.gitee.io/video-bar/))
 ## 使用方法
 
 安装依赖 `npm install`   
